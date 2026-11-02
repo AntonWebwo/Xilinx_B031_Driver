@@ -152,31 +152,31 @@ arm-linux-gnueabihf-g++ -shared -fPIC -std=c++11 -o libzynq7007_fpga.so zynq7007
 cd examples
 
 # Buttons
-cd buttons && arm-linux-gnueabihf-g++ -static -std=c++11 -lpthread test_buttons.c ../zynq7007_fpga_driver.c -o test_buttons
+cd buttons && arm-linux-gnueabihf-g++ -static -std=c++11 -lpthread test_buttons.c ../../zynq7007_fpga_driver.c -o test_buttons
 
 # FPGA Registers
-cd fpga && arm-linux-gnueabihf-g++ -static -std=c++11 -lpthread fpga_reg_tool.c ../zynq7007_fpga_driver.c -o fpga_reg_tool
+cd fpga && arm-linux-gnueabihf-g++ -static -std=c++11 -lpthread fpga_reg_tool.c ../../zynq7007_fpga_driver.c -o fpga_reg_tool
 
 # GPIO (Reset)
-cd gpio && arm-linux-gnueabihf-g++ -static -std=c++11 -lpthread reset_chain.c ../zynq7007_fpga_driver.c -o reset_chain
+cd gpio && arm-linux-gnueabihf-g++ -static -std=c++11 -lpthread reset_chain.c ../../zynq7007_fpga_driver.c -o reset_chain
 
 # I2C
-cd i2c && arm-linux-gnueabihf-g++ -static -std=c++11 -lpthread test_i2c_read.c ../zynq7007_fpga_driver.c -o test_i2c_read
+cd i2c && arm-linux-gnueabihf-g++ -static -std=c++11 -lpthread test_i2c_read.c ../../zynq7007_fpga_driver.c -o test_i2c_read
 
 # LED
-cd led && arm-linux-gnueabihf-g++ -static -std=c++11 -lpthread test_led.c ../zynq7007_fpga_driver.c -o test_led
+cd led && arm-linux-gnueabihf-g++ -static -std=c++11 -lpthread test_led.c ../../zynq7007_fpga_driver.c -o test_led
 
 # Plug Detection
-cd plug && arm-linux-gnueabihf-g++ -static -std=c++11 -lpthread test_plug.c ../zynq7007_fpga_driver.c -o test_plug
+cd plug && arm-linux-gnueabihf-g++ -static -std=c++11 -lpthread test_plug.c ../../zynq7007_fpga_driver.c -o test_plug
 
 # PWM (Fans)
-cd pwm && arm-linux-gnueabihf-g++ -static -std=c++11 -lpthread test_fan.c ../zynq7007_fpga_driver.c -o test_fan
+cd pwm && arm-linux-gnueabihf-g++ -static -std=c++11 -lpthread test_fan.c ../../zynq7007_fpga_driver.c -o test_fan
 
 # UART
-cd uart && arm-linux-gnueabihf-g++ -static -std=c++11 -lpthread test_uart_rx.c ../zynq7007_fpga_driver.c -o test_uart_rx
+cd uart && arm-linux-gnueabihf-g++ -static -std=c++11 -lpthread test_uart_rx.c ../../zynq7007_fpga_driver.c -o test_uart_rx
 
 # Version
-cd version && arm-linux-gnueabihf-g++ -static -std=c++11 -lpthread test_version.c ../zynq7007_fpga_driver.c -o test_version
+cd version && arm-linux-gnueabihf-g++ -static -std=c++11 -lpthread test_version.c ../../zynq7007_fpga_driver.c -o test_version
 ```
 
 ## Важные замечания
