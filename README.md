@@ -201,3 +201,6 @@ cd version && arm-linux-gnueabihf-g++ -static -std=c++11 -lpthread test_version.
 - Saleae Logic 16 - за возможность детального анализа протоколов
 - Сообщество разработчиков Antminer - за документацию и примеры кода
 - Daniel Sokil [@s0kil](https://github.com/s0kil) - за примеры кода
+
+---
+*Спаси электронику от свалки! ♻️*
